@@ -1,59 +1,155 @@
+/* 🌌 UNIVERSAL STYLES */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  font-family: 'Fira Sans', sans-serif;
-  background: #4272a5;
-  color: #fefefe;
+  background-color: #0b0f19;
+  color: #ffffff;
   line-height: 1.6;
-  padding-top: 70px;
 }
 
+/* 🌟 NAVBAR */
 nav {
-  background: #5e80be;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 nav .logo {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  color: #fefefe;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  gap: 25px;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 25px;
 }
 
 nav ul li a {
+  color: #fff;
   text-decoration: none;
-  color: #fefefe;
-  transition: color 0.3s ease;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #ffffff;
+  color: #4cc9f0;
 }
 
-section {
-  padding: 80px 20px;
-  max-width: 800px;
-  margin: auto;
+/* 🏠 HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 120px 20px 100px;
+  background: linear-gradient(135deg, #1b2735, #090a0f);
 }
 
-h1, h2 {
-  color: #ffffff;
-  margin-bottom: 15px;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #d1d1d1;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #4cc9f0;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #3bb2d6;
+}
+
+/* 📝 BLOG SECTION */
+.blogs {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.blogs h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.blog-card {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px auto;
+  padding: 20px;
+  width: 70%;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.blog-card h3 {
+  color: #4cc9f0;
+  margin-bottom: 10px;
+}
+
+.blog-card a {
+  color: #ffb703;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 📩 SIGNUP SECTION */
+.signup {
+  background: #121826;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.signup form {
+  margin-top: 20px;
+}
+
+.signup input {
+  padding: 10px;
+  margin: 8px;
+  border: none;
+  border-radius: 5px;
+  width: 220px;
+}
+
+.signup button {
+  padding: 10px 20px;
+  background: #4cc9f0;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup button:hover {
+  background: #3bb2d6;
+}
+
+/* ⚫ FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.5);
 }
